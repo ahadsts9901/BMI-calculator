@@ -1,0 +1,60 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    font-size: 1em;
+    background-color: #ffffff;
+    color: #7f3667;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h2{
+    color: #ffffff;
+    background-color: #7f3667;
+    border: 2px solid #7f3667;
+    width: 100%;
+    padding: 0.2em 0em;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+.container p, .container ol li, .container a{
+    font-weight: bold;
+    line-height: 2em;
+}
+
+.container a{
+    color: #ffffff;
+    background-color: #7f3667;
+    text-decoration: none;
+    padding: 0.4em;
+    width: 12em;
+    text-align: center;
+}
+
+.container a:hover{
+    color: #7f3667;
+    background-color: #ffffff;
+    border: 2px solid #7f3667;
+}
+
+.container img{
+    border: 2px solid #7f3667;
+}
+
+hr{
+    border: 1px solid #7f3667;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
