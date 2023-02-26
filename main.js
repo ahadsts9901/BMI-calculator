@@ -14,34 +14,34 @@ let bmi    = weight / height
 
 console.log('Your BMI Is: ' + bmi)
 
-alert ('Your BMI Is: ' + bmi)
+let FirstMessage = 'Your BMI Is: ' + bmi + ' And '
 
 if (bmi <=18.5) 
 {
 
-    alert ('You Are Under Weight')
+    alert (FirstMessage + 'You Are Under Weight')
 
-    console.log ('You Are Under Weight')
+    console.log (FirstMessage + 'You Are Under Weight')
 
 }   else    if (bmi <=25)
 {
 
-    alert ('You Are Normal')
+    alert (FirstMessage + 'You Are Normal')
 
-    console.log ('You Are Normal')
+    console.log (FirstMessage + 'You Are Normal')
 
 }   else    if (bmi <=30) 
 {
 
-    alert ('You Are Over Weight')
+    alert (FirstMessage + 'You Are Over Weight')
 
-    console.log ('You Are Over Weight')
+    console.log (FirstMessage + 'You Are Over Weight')
 
 }   else //(bmi >30)
 {
 
-    alert ('You Are Obese')
+    alert (FirstMessage + 'You Are Obese')
 
-    console.log ('You Are Obese')
+    console.log (FirstMessage + 'You Are Obese')
 
 }
