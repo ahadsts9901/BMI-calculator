@@ -1,10 +1,30 @@
-let height = prompt('Enter Your Height In Centi-Metres')
+let feet = prompt('Enter Your Height In Feets (Value Before Inch)')
 
-let weight = prompt('Enter Your Weight In Kilograms')
+let inch = prompt('Enter Your Height In Inches (Value After Feet)')
 
-    height = Number(height)
+    let weight = prompt('Enter Your Weight In Kilograms')
 
-    height = height/100
+// number the entered value
+
+    feet = Number(feet)
+
+    inch = Number(inch)
+
+// convert into inch
+
+let inch1 = feet * 12
+
+let inch2 = inch * 1
+
+    // alert (inch1)
+
+let HeightInInches = inch1 + inch2
+
+// convert inch into meter
+
+let height = HeightInInches * 0.0254
+
+    //alert (height)
 
     height = height * height
 
