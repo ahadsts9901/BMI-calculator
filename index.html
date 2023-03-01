@@ -6,6 +6,7 @@
     <title>BMI Calculator</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="./main.js"></script>
 </head>
 <body>
     <div class="container">
@@ -18,24 +19,40 @@
             <li>Enter Your Height In Inches (After Feet)</li>
             <li>Enter Your Weight In Kgs</li>
         </ol>
-        <a href="./bmi.html">
-            Calculate Your BMI
-        </a>
         <br/>
+        <!-- input started -->
+        <form onsubmit="calculateBMI(); return false">
+            <div class="input">
+                    <label for="age">Enter Your Age:<label>
+                <br/>
+                <input required step="1" type="number" id="age" min="0" max="150" placeholder="Age">
+                <br/>
+                    <label for="feet">Enter Your Height:</label>
+                <br/>
+                <input required step="1" type="number" id="feet" min="0" max="12" placeholder="Feet">
+                <input required step="1" type="number" id="inch" min="0" max="11" placeholder="Inches">
+                <br/>
+                    <label for="weight">Enter Your Weight:</label>
+                <br/>
+                    <input required step="0.01" type="number" id="weight" min="0" max="200" placeholder="KiloGrams">
+                <br/>
+                <br/>
+                    <button type="submit" class="button">Calculate Your BMI</button>
+                </div>
+                <br/>
+                <div class="output">
+                    <h2 id="nobg">Your BMI IS</h2>
+                    <h2 id="bmi"></h2>
+                    <p id="suggestion"></p>
+                </div>
+        </form>
+        <br/>
+        <!-- input completed -->
         <img src="./images/bmi chart.gif" width="70%" height="70%">
     </div>
     <br/>
     <hr/>
     <p class="center">Thanks For Visiting Regards!</p>
     <p class="center">Muhammad Ahad&copy;</p>
-
-    <script type="module" defer>
-
-        alert ('This Web Is Responsive On All Screens') ;
-
-        console.log ('This Web Is Responsive On All Screens')
-
-    </script>
-
 </body>
 </html>

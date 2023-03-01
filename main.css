@@ -1,5 +1,6 @@
 *{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
 }
 
 body{
@@ -23,6 +24,7 @@ body{
     text-align: center;
     position: sticky;
     top: 0;
+    z-index: 20;
 }
 
 .container p, .container ol li, .container a{
@@ -30,19 +32,80 @@ body{
     line-height: 2em;
 }
 
-.container a{
+.input{
+    padding: 1em 2em;
+    border: 2px solid #7f3667;
+    line-height: 1.5em;
+    padding: 1em 5em;
+}
+
+#feet, #inch{
+    width: 5em;
+    font-size: 1em;
+    color: #7f3667;
+    background-color: #d8d8d8;
+    border: 0px;
+    padding: 0.2em 0.5em;
+    border-radius: 10px;
+    font-weight: normal;
+}
+
+#weight, #age{
+    width: 11.4em;
+    font-size: 1em;
+    color: #7f3667;
+    background-color: #d8d8d8;
+    border: 0px;
+    padding: 0.2em 0.5em;
+    border-radius: 10px;
+    font-weight: normal;
+}
+
+#bmi{
+    width: 10em;
+    height: 2em;
+    font-size: 2em;
+    color: #7f3667;
+    background-color: #d8d8d8;
+    border: 0px;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    font-weight: normal;
+    z-index: 0;
+    position: static;
+}
+
+#suggestion{
+    width: 23em;
+    height: 2em;
+    font-size: 1em;
+    color: #000000;
+    background-color: #d8d8d8;
+    border: 0px;
+    padding: 0.2em 0.5em;
+    border-radius: 10px;
+    font-weight: normal;
+}
+
+#nobg{
+    background-color: #ffffff;
+    border: 0px;
+    color: #7f3667;
+    margin-bottom: -0.5em;
+    z-index: 0;
+    position: static;
+}
+
+.button {
     color: #ffffff;
     background-color: #7f3667;
     text-decoration: none;
     padding: 0.4em;
-    width: 12em;
+    width: 12.5em;
+    height: 3em;
     text-align: center;
-}
-
-.container a:hover{
-    color: #7f3667;
-    background-color: #ffffff;
-    border: 2px solid #7f3667;
+    border: 0px;
+    font-size: 1em;
 }
 
 .container img{
