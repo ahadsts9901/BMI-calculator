@@ -70,7 +70,7 @@ input{
     font-weight: normal;
 }
 
-#bmi{
+#bmi, #ideal{
     width:7em;
     height: 1em;
     font-size: 2em;

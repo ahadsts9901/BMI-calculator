@@ -54,7 +54,7 @@
 
 //calculations
 
-    let IdealWeight = 22 * height;
+    let IdealWeight = (22 * height).toFixed(2);
 
     let WeightToLose = (weight - IdealWeight).toFixed(2);
 
@@ -96,6 +96,7 @@
 
     document.querySelector('#bmi').innerHTML = bmi;
     document.querySelector('#suggestion').innerHTML = suggestion;
+    document.querySelector( '#ideal' ).innerHTML = IdealWeight + ' Kg(s)';
 
 
 }
