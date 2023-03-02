@@ -27,16 +27,21 @@ body{
     z-index: 20;
 }
 
-.container p, .container ol li, .container a{
+.container p, .container ol li{
     font-weight: bold;
     line-height: 2em;
 }
 
 .input{
-    padding: 1em 2em;
+    width: 84.5%;
+    padding: 1em;
     border: 2px solid #7f3667;
     line-height: 1.5em;
-    padding: 1em 5em;
+    text-align: center;
+}
+
+.output{
+    text-align: center;
 }
 
 #feet, #inch{
@@ -62,22 +67,27 @@ body{
 }
 
 #bmi{
-    width: 10em;
-    height: 2em;
+    width:86%;
+    height: 1em;
     font-size: 2em;
     color: #7f3667;
     background-color: #d8d8d8;
     border: 0px;
-    padding: 0.5em 1em;
+    padding: 0.5em;
     border-radius: 10px;
     font-weight: normal;
     z-index: 0;
     position: static;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
 }
 
 #suggestion{
-    width: 23em;
-    height: 2em;
+    width:93%;
+    height: 4em;
     font-size: 1em;
     color: #000000;
     background-color: #d8d8d8;
@@ -85,6 +95,10 @@ body{
     padding: 0.2em 0.5em;
     border-radius: 10px;
     font-weight: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
 }
 
 #nobg{
@@ -120,4 +134,10 @@ hr{
     display: flex;
     justify-content: center;
     font-weight: bold;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

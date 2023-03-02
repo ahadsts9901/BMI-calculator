@@ -21,7 +21,7 @@
         </ol>
         <br/>
         <!-- input started -->
-        <form onsubmit="calculateBMI(); return false">
+        <form onsubmit=" calculateBMI( event); return false ">
             <div class="input">
                     <label for="age">Enter Your Age:<label>
                 <br/>
@@ -48,7 +48,9 @@
         </form>
         <br/>
         <!-- input completed -->
-        <img src="./images/bmi chart.gif" width="70%" height="70%">
+        <div class="img">
+            <img src="./images/bmi chart.gif" width="70%" height="70%">
+        </div>
     </div>
     <br/>
     <hr/>

@@ -1,4 +1,12 @@
-function calculateBMI() {
+    function calculateBMI(event)
+
+    
+
+{
+
+    {
+        event.preventDefault()
+    }
 
 // taking input
 
@@ -41,26 +49,26 @@ function calculateBMI() {
 // print console
 
     console.log ('Your BMI Is: ' + bmi);
-    console.log ("IdealWeight: ", IdealWeight)
+    // console.log ("IdealWeight: ", IdealWeight)
 
 
 //calculations
 
     let IdealWeight = 22 * height
 
-    let WeightToLose = (weight - IdealWeight).toFixed(2)
+    let WeightToLose = (weight - IdealWeight).toFixed(2);
 
-    let WeightToGain = (IdealWeight - weight).toFixed(2)
+    let WeightToGain = (IdealWeight - weight).toFixed(2);
 
 // if condition
 
     if (bmi >30){
 
-    suggestion += `Obese. You need to lose ${WeightToLose}KGs`
+    suggestion += `Obese. You need to lose ${WeightToLose} KGs to become normal`
 
 }   else    if (bmi >25) 
 {
-    suggestion += `OverWeight. You need to lose ${WeightToLose}KGs`
+    suggestion += `OverWeight. You need to lose ${WeightToLose} KGs to become normal`
 
 }   else    if (bmi >22){
 
@@ -77,12 +85,17 @@ function calculateBMI() {
 }   else    // (bmi <18.5)
 {
 
-    suggestion +=  ` UnderWeight. You need to gain ${WeightToGain}KGs to become normal`
+    suggestion +=  ` UnderWeight. You need to gain ${WeightToGain} KGs to become normal`
     
 
 }
 
-    document.querySelector('#bmi').innerhtml = `${(bmi).toFixed(2)}KGs`
-    document.querySelector('#suggestion').innerhtml = suggestion
+    
+
+    console.log (suggestion)
+
+    document.querySelector('#bmi').innerHTML = bmi
+    document.querySelector('#suggestion').innerHTML = suggestion
+
 
 }
