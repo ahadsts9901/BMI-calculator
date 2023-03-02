@@ -74,7 +74,7 @@
 
     suggestion += `Normal. But optionally you may lose ${WeightToLose} KGs to become ideally fit`
 
-}   else    if (bmi === 22){
+}   else    if (bmi == 22.00){
    
     suggestion += `Perfectly Fit`
 
