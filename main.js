@@ -1,12 +1,12 @@
-    function calculateBMI(event)
-
-    
+    alert ( "This web is responsive on all screens" );
+ 
+ function calculateBMI(event)
 
 {
 
     {
         event.preventDefault()
-    }
+    };
 
 // taking input
 
@@ -42,9 +42,9 @@
 
     let bmi = weight / height;
 
-    bmi = (bmi).toFixed(2)
+    bmi = (bmi).toFixed(2);
 
-    let suggestion = ('You Are ')
+    let suggestion = ('You Are ');
 
 // print console
 
@@ -54,7 +54,7 @@
 
 //calculations
 
-    let IdealWeight = 22 * height
+    let IdealWeight = 22 * height;
 
     let WeightToLose = (weight - IdealWeight).toFixed(2);
 
@@ -64,38 +64,38 @@
 
     if (bmi >30){
 
-    suggestion += `Obese. You need to lose ${WeightToLose} KGs to become normal`
+    suggestion += `Obese. You need to lose ${WeightToLose} KGs to become normal`;
 
-}   else    if (bmi >25) 
+}   else    if (bmi >25)
 {
-    suggestion += `OverWeight. You need to lose ${WeightToLose} KGs to become normal`
+    suggestion += `OverWeight. You need to lose ${WeightToLose} KGs to become normal`;
 
 }   else    if (bmi >22){
 
-    suggestion += `Normal. But optionally you may lose ${WeightToLose} KGs to become ideally fit`
+    suggestion += `Normal. But optionally you may lose ${WeightToLose} KGs to become ideally fit`;
 
 }   else    if (bmi == 22.00){
    
-    suggestion += `Perfectly Fit`
+    suggestion += `Perfectly Fit`;
 
 }   else    if (bmi >=18) {
 
-    suggestion += `Normal. But optionally you may gain ${WeightToGain} KGs to become ideally fit`
+    suggestion += `Normal. But optionally you may gain ${WeightToGain} KGs to become ideally fit`;
 
 }   else    // (bmi <18.5)
 {
 
-    suggestion +=  ` UnderWeight. You need to gain ${WeightToGain} KGs to become normal`
+    suggestion +=  ` UnderWeight. You need to gain ${WeightToGain} KGs to become normal`;
     
 
 }
 
     
 
-    console.log (suggestion)
+    console.log (suggestion);
 
-    document.querySelector('#bmi').innerHTML = bmi
-    document.querySelector('#suggestion').innerHTML = suggestion
+    document.querySelector('#bmi').innerHTML = bmi;
+    document.querySelector('#suggestion').innerHTML = suggestion;
 
 
 }

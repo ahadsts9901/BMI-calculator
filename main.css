@@ -67,7 +67,7 @@ body{
 }
 
 #bmi{
-    width:86%;
+    width:7em;
     height: 1em;
     font-size: 2em;
     color: #7f3667;
@@ -86,7 +86,7 @@ body{
 }
 
 #suggestion{
-    width:93%;
+    width: 15em;
     height: 10em;
     font-size: 1em;
     color: #000000;
